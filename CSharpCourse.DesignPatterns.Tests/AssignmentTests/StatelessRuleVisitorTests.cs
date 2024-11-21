@@ -35,26 +35,22 @@ public class StatelessRuleVisitorTests
                                                            - The value must contain at least one of these characters: !?%&*-_.
 
                                                        """;
-
+    
     [Fact]
     public void RuleVerifier()
     {
-        /*
         var ruleVerifier = new RuleVerifier();
         Assert.False(ruleVerifier.Visit(_passwordRule, "admin"));
         Assert.True(ruleVerifier.Visit(_passwordRule, "admin123"));
-        */
     }
 
     [Fact]
     public void RuleRequirementsBuilder()
     {
-        /*
         var passwordRequirements = new RuleRequirementsBuilder();
         var context = new RuleRequirementsContext();
         _ = passwordRequirements.Visit(_passwordRule, context);
 
         Assert.Equal(PasswordRequirementsMessage, context.ToString());
-        */
     }
 }
